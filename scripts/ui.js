@@ -1,16 +1,21 @@
 const containerPokemons = document.getElementById('container');
 
-export const printPokemons = (listPokemons) => {
-
+export const printPokemons = (listPokemons) => { 
+    
     containerPokemons.innerHTML ='';
-    listPokemons.forEach(async(pokemon) => {
-        const {data:{height}} = await axios.get(pokemon.url);
+    listPokemons.forEach(async(pokemon,index) => {
+        
+        const {data:{sprites}} = await axios.get(pokemon.url);
+        if(index<4){
         containerPokemons.innerHTML +=`
-        <div class="pokemon">
-            <h3>${pokemon.name}</h3>
-            <span>altura:${height}</span>
-        </div>
-       `
+        <span class="pokemon">
+            <section id="container">
+            <figure>
+                <img src="${sprites.other.home.front_default}" alt="">
+            </figure>
+            </section>
+        </span> 
+       `}
     });
 };
 
