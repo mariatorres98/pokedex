@@ -9,4 +9,3 @@ export const getinfo = async () => {
      console.log(results);
      return results;
 }
-
