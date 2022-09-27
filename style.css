@@ -37,7 +37,7 @@ body {
     color: white;
 }
 
-.main-container {
+#container2 {
     display: flex;
     justify-content: center;
     padding: 20px;
@@ -112,6 +112,10 @@ body {
     flex-wrap: wrap;
     gap: 100px;
 }
+#click{
+    border: none;
+    background-color: transparent;
+}
 .otros{
     margin-top: 60px;
     margin-left: 90px;
@@ -150,7 +154,7 @@ body {
     .encabezado{
         justify-content: center;
     }
-    .main-container{
+    #container2{
         flex-direction: column;
         align-items: center;
     }
