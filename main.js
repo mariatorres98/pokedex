@@ -2,6 +2,10 @@ import { getinfo } from "./scripts/process.js";
 import {printPokemons} from "./scripts/ui.js";
 import {printPokemonprincipal} from "./scripts/ui.js";
 import {printPokemonselegidos} from "./scripts/ui.js";
+import { btnSearch, handleSearch} from "./scripts/ui.js";
+
+btnSearch.addEventListener('click', handleSearch);
+
 
 
 const mainFuntion= async () => {

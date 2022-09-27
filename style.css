@@ -24,8 +24,8 @@ body {
     display: flex;
     align-items: center;
     padding: 15px;
-    gap: 10px;
     border-radius: 15px 15px 0 0;
+    justify-content:space-between;
 }
 
 .encabezado figure img {
@@ -36,7 +36,24 @@ body {
     text-transform: uppercase;
     color: white;
 }
-
+.logo_title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.input {
+    border-radius: 5px;
+    padding: 10px 10px;
+    width: 280px;
+    border-style: none;
+}
+.search_btn {
+    border-radius: 5px;
+    padding: 9px 6px;
+    border-style: none;
+    background-color: var(--ligthpurple);
+    cursor: pointer;
+}
 #container2 {
     display: flex;
     justify-content: center;
