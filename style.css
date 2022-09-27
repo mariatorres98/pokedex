@@ -24,8 +24,8 @@ body {
     display: flex;
     align-items: center;
     padding: 15px;
-    gap: 10px;
     border-radius: 15px 15px 0 0;
+    justify-content:space-between;
 }
 
 .encabezado figure img {
@@ -36,8 +36,25 @@ body {
     text-transform: uppercase;
     color: white;
 }
-
-.main-container {
+.logo_title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.input {
+    border-radius: 5px;
+    padding: 10px 10px;
+    width: 280px;
+    border-style: none;
+}
+.search_btn {
+    border-radius: 5px;
+    padding: 9px 6px;
+    border-style: none;
+    background-color: var(--ligthpurple);
+    cursor: pointer;
+}
+#container2 {
     display: flex;
     justify-content: center;
     padding: 20px;
@@ -107,41 +124,44 @@ body {
     font-size: 24px;
     font-weight: bolder;
 }
-
-.footer-content {
+#container{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
+    flex-wrap: wrap;
+    gap: 100px;
+}
+#click{
+    border: none;
+    background-color: transparent;
+}
+.otros{
+    margin-top: 60px;
+    margin-left: 90px;
+    margin-right: 90px;
+}
+.pokemon {
+    display: flex;
     background-color: white;
     border-radius: 0 0 15px 15px;
 }
 
-.footer-content figure img {
+.pokemon figure img {
     width: 100px;
     height: 100px;
-    object-fit: contain;
 }
 
-.footer-content figure {
+.pokemon figure {
     padding: 15px;
     background-color: var(--ligthpurple);
     border-radius: 10px;
     margin: 10px;
 }
 
-.footer-content figure:hover {
+.pokemon figure:hover {
     cursor: pointer;
     background-color: var(--purple);
 }
 
-.footer-content div {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 20px;
-    width: 65%;
-}
+
 
 .charizard-baby{
     display: none;
@@ -151,7 +171,7 @@ body {
     .encabezado{
         justify-content: center;
     }
-    .main-container{
+    #container2{
         flex-direction: column;
         align-items: center;
     }

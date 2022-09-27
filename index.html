@@ -6,11 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js" integrity="sha512-odNmoc1XJy5x1TMVMdC7EMs3IVdItLPlCeL5vSUPN2llYKMJ2eByTTAIiiuqLg+GdNr9hF6z81p27DArRFKT7A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <title>Pokedex</title>
 </head>
 
 <body>
     <header class="encabezado">
+        <div class="logo_title">
         <figure class="pokeball">
             <img src="https://www.pngall.com/wp-content/uploads/4/Pokeball-PNG-Images.png"
                 alt="logo">
@@ -19,8 +21,13 @@
             <img src="https://i.pinimg.com/originals/f2/95/76/f295769d9bd3c34ffc552e837f5304ae.png" alt="pokemon">
         </figure>
         <h1>Pokédex_</h1>
+        </div>
+        <div>
+        <input type="text" placeholder="Search pokemon" id="search" class="input">
+        <button id="btnSearch" class="search_btn">search</button>
+        </div>
     </header>
-    <main class="main-container">
+    <main id="container2">
         <section class="charizard-container">
             <div class="title">
                 <figure>
@@ -65,14 +72,19 @@
             </div>
         </article>
     </main>
-    <footer class="footer-content">
-        <h3>OTHERS</h3>
-        <div>
-            <figure>
-                <img src="" alt="pokemon">
-            </figure>
-        </div>
+    <footer>     
+        <span class="pokemon">
+            <div class="otros">OTHERS</div>
+            <section id="container">
+            <button id="click">
+                <figure>
+                    <img src="" alt="">
+                </figure>
+            </button>
+            </section>
+        </span>
     </footer>
+    
+    <script src="main.js" type="module"></script>
 </body>
-
 </html>
